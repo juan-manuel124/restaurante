@@ -14,7 +14,13 @@
           <div class="card-body p-0">
             <!-- Nested Row within Card Body -->
             <div class="row">
-              <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                <div class="col-lg-6 d-none d-lg-block ">
+                    <div class="card-footer text-muted">
+                      <img src="{{ asset('imagenes/fotoRestaurante1.jpg') }}" class="img-fluid" alt="Responsive image">
+                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                    </div>
+                </div>
+              <!--  <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> este es el perrito -->
               <div class="text-center" class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">

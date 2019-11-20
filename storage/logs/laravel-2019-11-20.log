@@ -1,4 +1,4 @@
-[2019-11-13 00:37:27] local.ERROR: Command "server" is not defined.
+[2019-11-20 02:12:08] local.ERROR: Command "server" is not defined.
 
 Did you mean one of these?
     make:observer

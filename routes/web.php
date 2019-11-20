@@ -13,8 +13,12 @@
 
 use App\Http\Controllers\pagesController;
 use Illuminate\Auth\Events\Login;
+/*
+Route::get('/', 'PagesController@login');*/
 
-Route::get('/', 'PagesController@login');
+Route::get('/', function () {
+    return view('login');
+});
 
 Route::get('pedido','PagesController@pedido')->name('ped');
 
