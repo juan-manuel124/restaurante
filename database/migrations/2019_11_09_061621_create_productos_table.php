@@ -17,7 +17,8 @@ class CreateProductosTable extends Migration
             $table->bigIncrements('id');
             $table->string('nombreProducto');
             $table->double('cantidadProducto');
-            $table->double('precio');
+            $table->double('precioCosto');
+            $table->double('precioVenta');
             $table->timestamps();
         });
     }

@@ -1,4 +1,4 @@
-<?php
+    |<?php
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -14,8 +14,10 @@ class CreateComprasTable extends Migration
     public function up()
     {
         Schema::create('compras', function (Blueprint $table) {
+            $table->bigIncrements('id');
             $table->string('nombreProducto');
             $table->double('cantidadProducto');
+            $table->date('fecha');
             $table->double('precio');
             $table->rememberToken();
             $table->timestamps();

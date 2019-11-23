@@ -11,6 +11,7 @@
                 <thead >
                 <tr>
                     <th scope="col"> <h4><strong>Nombre</strong></h4></th>
+                    <th scope="col"> <h4><strong>Correo electronico</strong></h4></th>
                     <th scope="col"></th>
                     <th scope="col"></th>
                     
@@ -21,7 +22,9 @@
                 <?php $__currentLoopData = $usuarios; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $usuario): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <tr>
                     <td><?php echo e($usuario->name); ?></td>
-                    <td><button type="button" class="btn btn-secondary">Modificar</button></td>
+                    <td><?php echo e($usuario->email); ?></td>
+                    <?php $user = $usuario->name; ?>
+                    <td><a href="<?php echo e(route('modificarusuario',$user)); ?>"> <button type="button" class="btn btn-secondary">Modificar</button></a></td>
                     <td><button type="button" class="btn btn-danger">Eliminar</button></td>
                 </tr>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

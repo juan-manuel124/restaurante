@@ -1,23 +1,21 @@
 @extends('plantilla')
 
 @section('seccion')
+    
     <br>
     <br>
     <br>
     <h1>Crear Producto</h1>
     <br>
     <br>
-    <form action="{{route('prodint')}}" method="post">
+    <form action="{{route('insertarproducto')}}" method="post">
     @csrf
     <table class="table table-striped">
         <tr>
-            <td><center><input type="varchar" name="nombreProducto" value="nombre del Producto"></center></td>
+            <td><center><input type="varchar" name="nombreProducto" placeholder="Nombre del Producto"  class="form-control form-control-lg"></center></td>
         </tr>
         <tr>
-            <td><center><input type="double" name="cantidadProducto" value="cantidad del Producto"></center></td>
-        </tr>
-        <tr>
-            <td><center><input type="double" name="precio" value="precio"></center></td>
+            <td><center><input type="double" name="precioVenta" placeholder="Precio de Venta"  class="form-control form-control-lg"></center></td>
         </tr>
     </table>
 	<center><button type="submit" class="btn btn-primary">Guardar</button><a href="{{ route('producto') }}" ><button type="button" class="btn btn-danger">volver</button></a></center>

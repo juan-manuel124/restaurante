@@ -80,13 +80,13 @@
            <span>Dashboard</span></a>
            <div class="col-ms-2">
             <nav class="nav flex-column">
-            <p><a href="<?php echo e(route('ped')); ?>" class="btn btn-primary">Pedido</a></p>
-            <p><a href="<?php echo e(route('fac')); ?>" class="btn btn-primary">Facturación</a></p>
+            <p><a href="<?php echo e(route('pedidos')); ?>" class="btn btn-primary">Pedido</a></p>
+            <p><a href="<?php echo e(route('facturacion')); ?>" class="btn btn-primary">Facturación</a></p>
             <p><a href="<?php echo e(route('mesa')); ?>" class="btn btn-primary">Mesa</a></p>
             <p><a href="<?php echo e(route('producto')); ?>" class="btn btn-primary">Productos</a></p> 
-            <p><a href="<?php echo e(route('coc')); ?>" class="btn btn-primary">Cocina</a></p>   
-            <p><a href="<?php echo e(route('comp')); ?>" class="btn btn-primary">Compras</a></p>
-            <p><a href="<?php echo e(route('usu')); ?>" class="btn btn-primary">Usuarios</a></p>          
+            <p><a href="<?php echo e(route('cocina')); ?>" class="btn btn-primary">Cocina</a></p>   
+            <p><a href="<?php echo e(route('compras')); ?>" class="btn btn-primary">Compras</a></p>
+            <p><a href="<?php echo e(route('usuarios')); ?>" class="btn btn-primary">Usuarios</a></p>          
             </nav>
           </div>
        </li>

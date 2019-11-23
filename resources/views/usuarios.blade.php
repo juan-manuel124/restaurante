@@ -13,6 +13,7 @@
                 <thead >
                 <tr>
                     <th scope="col"> <h4><strong>Nombre</strong></h4></th>
+                    <th scope="col"> <h4><strong>Correo electronico</strong></h4></th>
                     <th scope="col"></th>
                     <th scope="col"></th>
                     
@@ -23,8 +24,12 @@
                 @foreach($usuarios as $usuario)
                 <tr>
                     <td>{{$usuario->name}}</td>
-                    <td><button type="button" class="btn btn-secondary">Modificar</button></td>
-                    <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                    <td>{{$usuario->email}}</td>
+                    <?php $user = $usuario->name; ?>
+                    <td><a href="{{route('modificarusuario',$user)}}"> <button type="button" class="btn btn-secondary">Modificar</button></a></td>
+                    <!--<td><form action="{{route ('eliminarusuario',$user)}}" method="post">
+                        @csrf  @method('DELETE')
+                    <button type="submit" class="btn btn-danger">Eliminar</button></td>-->
                 </tr>
                 @endforeach
                 </tbody>

@@ -3,59 +3,36 @@
         <h1>Ingresar Compra</h1>
      
          
-       <!-- <table class="table table-striped">
-                
-                <tr>
-                    <th scope="col"><h2>Producto</h2></th>
-                    <th scope="col"><h2>Cantidad</h2></th>
-                    <th scope="col"><h2>Precio Unidad</h2></th>
-                    <th scope="col"><h2>Subtotal</h2></th>
-                </tr>
-                <tr>
-                    <td><input type="text" name="producto"></td>
-                    <td><input type="int" name="cantidad"></td>
-                    <td><input type="int" name="precio"></td>
-                    <td><input type="varchar" name="subtotal" value="cantidad * precio"></td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="producto"></td>
-                    <td><input type="int" name="cantidad"></td>
-                    <td><input type="int" name="precio"></td>
-                    <td><input type="varchar" name="subtotal" value="cantidad * precio"></td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="producto"></td>
-                    <td><input type="int" name="cantidad"></td>
-                    <td><input type="int" name="precio"></td>
-                    <td><input type="varchar" name="subtotal" value="cantidad * precio"></td>
-                </tr>
-                <tr>
-                    <td><button type="button" class="btn btn-secondary">Aderir Producto</button></td>
-                </tr>
-            </table>-->
-            <form action="<?php echo e(route('compint')); ?>" method="post">
+       
+            <form action="<?php echo e(route('insertarcompra')); ?>" method="post">
                 <?php echo csrf_field(); ?>
                 <table class="table table-striped">
                     <tr>
-                        <td><center><input type="varchar" name="nombreProducto" value="Nombre Producto"></center></td>
+                        <td><center><select name="nombreProducto" class="form-control form-control-lg" >
+                            
+                            <?php $__currentLoopData = $productos; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $producto): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                <option><?php echo e($producto->nombreProducto); ?></option>
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
+                        </select></center></td>
                     </tr>
                     <tr>
-                        <td><center><input type="double" name="cantidadProducto" value="Cantidad"></center></td>
+                        <td><center><input type="double" name="cantidadProducto" placeholder="Cantidad"  class="form-control form-control-lg"></center></td>
                     </tr>
                     <tr>
-                        <td><center><input type="double" name="precio" value="Precio"></center></td>
+                        <td><center><input type="varchar" name="fecha" placeholder="fecha  ejm:2008-08-23" class="form-control form-control-lg"></center></td>
+                    </tr>
+                    <tr>
+                        <td><center><input type="double" name="precio" placeholder="Precio" class="form-control form-control-lg"></center></td>
                     </tr>
                 </table>
                 <div class="container">
                     <div class="col" align="center">
-                        <button type="submit" class="btn btn-primary">Guardar</button><a href="<?php echo e(route('comp')); ?>" ><button type="button" class="btn btn-danger">Volver</button></a>
+                        <button type="submit" class="btn btn-primary">Guardar</button><a href="<?php echo e(route('compras')); ?>" ><button type="button" class="btn btn-danger">Volver</button></a>
                     </div>
                     
                 </div>
             </form>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
         
         
 <?php $__env->stopSection(); ?>

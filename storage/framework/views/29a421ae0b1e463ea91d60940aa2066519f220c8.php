@@ -14,11 +14,10 @@
             <div class="row">
                 <div class="col-lg-6 d-none d-lg-block ">
                     <div class="card-footer text-muted">
-                      <img src="<?php echo e(asset('imagenes/fotoRestaurante1.jpg')); ?>" class="img-fluid" alt="Responsive image">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                        <img src="<?php echo e(asset('imagenes/fotoRestaurante1.jpg')); ?>" class="img-fluid" alt="Responsive image">
+                        <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
                     </div>
                 </div>
-              <!--  <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> este es el perrito -->
               <div class="text-center" class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
@@ -34,7 +33,7 @@
 
                         <div class="text-center" class="form-group row">
                             
-                            <label for="email" ><?php echo e(__('Correo electr贸nico')); ?></label>
+                            <label for="email" ><?php echo e(__('Correo electrnico')); ?></label>
                             
                             <div class="text-center" class="col-md-6">
                            
@@ -114,7 +113,7 @@ unset($__errorArgs, $__bag); ?>
 
                                 <?php if(Route::has('password.request')): ?>
                                     <a class="btn btn-link" href="<?php echo e(route('password.request')); ?>">
-                                        <?php echo e(__('驴Olvid贸 su contrase帽a?')); ?>
+                                        <?php echo e(__('¿Olvidó su contraseña?')); ?>
 
                                     </a>
                                 <?php endif; ?>

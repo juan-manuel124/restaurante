@@ -16,11 +16,10 @@
             <div class="row">
                 <div class="col-lg-6 d-none d-lg-block ">
                     <div class="card-footer text-muted">
-                      <img src="{{ asset('imagenes/fotoRestaurante1.jpg') }}" class="img-fluid" alt="Responsive image">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                        <img src="{{ asset('imagenes/fotoRestaurante1.jpg') }}" class="img-fluid" alt="Responsive image">
+                        <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
                     </div>
                 </div>
-              <!--  <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> este es el perrito -->
               <div class="text-center" class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
@@ -36,7 +35,7 @@
 
                         <div class="text-center" class="form-group row">
                             
-                            <label for="email" >{{ __('Correo electr贸nico') }}</label>
+                            <label for="email" >{{ __('Correo electrnico') }}</label>
                             
                             <div class="text-center" class="col-md-6">
                            
@@ -86,7 +85,7 @@
 
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('驴Olvid贸 su contrase帽a?') }}
+                                        {{ __('¿Olvidó su contraseña?') }}
                                     </a>
                                 @endif
                             </div>

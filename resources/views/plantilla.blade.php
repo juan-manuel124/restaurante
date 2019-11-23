@@ -81,13 +81,13 @@
            <span>Dashboard</span></a>
            <div class="col-ms-2">
             <nav class="nav flex-column">
-            <p><a href="{{ route('ped') }}" class="btn btn-primary">Pedido</a></p>
-            <p><a href="{{ route('fac') }}" class="btn btn-primary">Facturación</a></p>
+            <p><a href="{{ route('pedidos') }}" class="btn btn-primary">Pedido</a></p>
+            <p><a href="{{ route('facturacion') }}" class="btn btn-primary">Facturación</a></p>
             <p><a href="{{ route('mesa') }}" class="btn btn-primary">Mesa</a></p>
             <p><a href="{{ route('producto') }}" class="btn btn-primary">Productos</a></p> 
-            <p><a href="{{ route('coc') }}" class="btn btn-primary">Cocina</a></p>   
-            <p><a href="{{ route('comp') }}" class="btn btn-primary">Compras</a></p>
-            <p><a href="{{ route('usu') }}" class="btn btn-primary">Usuarios</a></p>          
+            <p><a href="{{ route('cocina') }}" class="btn btn-primary">Cocina</a></p>   
+            <p><a href="{{ route('compras') }}" class="btn btn-primary">Compras</a></p>
+            <p><a href="{{ route('usuarios') }}" class="btn btn-primary">Usuarios</a></p>          
             </nav>
           </div>
        </li>
